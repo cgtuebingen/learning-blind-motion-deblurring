@@ -6,7 +6,7 @@ TensorFlow implementation of multi-frame blind deconvolution:
 Patrick Wieschollek, Michael Hirsch, Bernhard Schölkopf, Hendrik P.A. Lensch<br>
 *ICCV 2017*
 
-See [download results from the paper](https://github.com/cgtuebingen/learning-blind-motion-deblurring/releases).
+[Download results from the paper](https://github.com/cgtuebingen/learning-blind-motion-deblurring/releases).
 
 ![results](https://user-images.githubusercontent.com/6756603/28306964-93f64ce2-6ba1-11e7-8cdc-4f112d9d6059.jpg)
 
