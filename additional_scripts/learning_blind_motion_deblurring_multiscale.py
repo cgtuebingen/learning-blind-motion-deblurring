@@ -149,7 +149,7 @@ class Model(ModelDesc):
 
                 with tf.name_scope('block_2'):
                     block = ReluConv2D('d3_0', block, 128, stride=2)
-                    #block = Merge(skip_temporal_in, 1, block, 'd31_s')
+                    # block = Merge(skip_temporal_in, 1, block, 'd31_s')
                     block = Merge(skip_spatial_in, 2, block, 'd34_s')
                     block_start = block
                     block = ReluConv2D('d3_1', block, 128)
@@ -163,7 +163,7 @@ class Model(ModelDesc):
                 # ---------------------------------------------------------------------
                 with tf.name_scope('block_3'):
                     block = ReluConv2D('d4_0', block, 256, stride=2)
-                    #block = Merge(skip_temporal_in, 0, block, 'd41_s')
+                    # block = Merge(skip_temporal_in, 0, block, 'd41_s')
                     block = Merge(skip_spatial_in, 3, block, 'd44_s')
                     block_start = block
                     block = Merge(skip_temporal_in, 0, block, 'd41_s')
@@ -282,7 +282,7 @@ class Model(ModelDesc):
                 ll = LEVELS - l - 1
                 logger.info("level: {} with input shape {}".format(ll, observation_pyramid[l].get_shape()))
                 # start with observation of smallest spatial size (l == 0)
-                skip_spatial_in = None if (l == 0) else skip_spatial_out[l - 1]
+                skip_spatial_in = None if (l == 0) else skip_spatial_out[l - 1]  # noqa
 
                 estimate_pyramid[l], skip_spatial_out[l], skip_temporal_out[l] = \
                     self.deblur_block(observation_pyramid[l],
