@@ -308,7 +308,7 @@ class Model(ModelDesc):
                 # naming estimates for grabbing during deployment
                 tf.identity((estimate_pyramid[l] + 1.0) * 128., name='estimate_t%i_l%i' % (t, ll))
 
-                if(l == LEVELS - 1):
+                if(l == LEVELS - 1):  #noqa
                     estimate_viz.append(estimate_pyramid[l])
 
         # just visualize original images
