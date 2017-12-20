@@ -131,7 +131,6 @@ class Model(ModelDesc):
                     block = tf.add(block_start, block, name='block_skip_A')
                     skip_spatial_out.append(block)
 
-
                 # H/2 x W/2 -> H/2 x W/2
                 # ---------------------------------------------------------------------
                 with tf.name_scope('block_1'):
@@ -144,7 +143,6 @@ class Model(ModelDesc):
                     block = tf.add(block_start, block, name='block_skip_B')
                     skip_spatial_out.append(block)
                     skip_unet_out.append(block)
-
 
                 # H/2 x W/2 -> H/4 x W/4
                 # ---------------------------------------------------------------------
@@ -161,7 +159,6 @@ class Model(ModelDesc):
                     skip_spatial_out.append(block)
                     skip_unet_out.append(block)
 
-
                 # H/4 x W/4 -> H/8 x W/8
                 # ---------------------------------------------------------------------
                 with tf.name_scope('block_3'):
@@ -176,7 +173,6 @@ class Model(ModelDesc):
                     block = tf.add(block_start, block, name='block_skip_D')
                     skip_temporal_out.append(block)
                     skip_spatial_out.append(block)
-
 
                 # H/8 x W/8 -> H/4 x W/4
                 # ---------------------------------------------------------------------
