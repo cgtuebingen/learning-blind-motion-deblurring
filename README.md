@@ -87,3 +87,9 @@ We further tried a convLSTM/convGRU and a multi-scale approach (instead of the s
 ## Notes
 I re-trained a slightly larger model in TensorPack just for testing the TensorPack library some months ago. It seems to have similar performance (although it is not compatible with this GitHub project).
 Find the inference code/weights [here](http://files.patwie.com/suppmat/patwie_iccv17_deblurring_model.tar.gz).
+
+Please note, TensorFlow introduce some changes over time. This setup is tested under
+- Python 2.7
+- Tensorflow-gpu v1.9.0
+- Cuda 9.0
+- Tensorpack 0.1.6 (from 17 Feb 2017)
