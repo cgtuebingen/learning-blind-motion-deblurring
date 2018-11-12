@@ -6,7 +6,7 @@ TensorFlow implementation of multi-frame blind deconvolution:
 Patrick Wieschollek, Michael Hirsch, Bernhard Schölkopf, Hendrik P.A. Lensch<br>
 *ICCV 2017*
 
-[Download results from the paper](https://github.com/cgtuebingen/learning-blind-motion-deblurring/releases). We propose to use the [saccade-viewer](http://image-viewer.com) to compare images qualitatively.
+[Download results from the paper](https://github.com/cgtuebingen/learning-blind-motion-deblurring/releases). We propose to use the [saccade-viewer](https://github.com/patwie/saccade) to compare images qualitatively.
 
 ![results](https://user-images.githubusercontent.com/6756603/28306964-93f64ce2-6ba1-11e7-8cdc-4f112d9d6059.jpg)
 
